@@ -1,0 +1,17 @@
+.Footer {
+  /*border: 1px solid blue;*/
+
+  font-size: max(8px, calc(8px + 0.2vw));
+  color: rgb(20, 207, 73);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}
