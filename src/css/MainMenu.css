@@ -81,3 +81,26 @@
     box-shadow: 0 0 20px rgb(20, 207, 73), inset 0 0 20px rgb(20, 207, 73);
   }
 }
+
+/* Media query to reduce the space between items */
+@media (max-width: 600px) {
+  .MainMenu li {
+    margin: 0 5px;
+    padding: 5px 0;
+  }
+}
+
+/* Media query to reduce the text size and padding as a last resort */
+@media (max-width: 400px) {
+  .MainMenu ul {
+    font-size: max(8px, calc(8px + 0.2vw));
+  }
+
+  .MainMenu li a {
+    padding: 8px 15px;
+  }
+
+  .MainMenu {
+    padding: 5px 10px;
+  }
+}
