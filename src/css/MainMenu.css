@@ -84,23 +84,35 @@
 
 /* Media query to reduce the space between items */
 @media (max-width: 600px) {
+  .MainMenu ul {
+    font-size: max(8px, calc(8px + 0.2vw)); /* Slightly reduce font size */
+  }
+
   .MainMenu li {
     margin: 0 5px;
-    padding: 5px 0;
-  }
-}
-
-/* Media query to reduce the text size and padding as a last resort */
-@media (max-width: 400px) {
-  .MainMenu ul {
-    font-size: max(8px, calc(8px + 0.2vw));
+    padding: 3px 0; /* Further reduce padding */
   }
 
   .MainMenu li a {
-    padding: 8px 15px;
+    padding: 8px 15px; /* Reduce padding inside anchor tags */
+  }
+}
+
+/* Media query to further reduce the text size and padding as a last resort */
+@media (max-width: 400px) {
+  .MainMenu ul {
+    font-size: max(6px, calc(6px + 0.2vw)); /* Significantly reduce font size */
+  }
+
+  .MainMenu li {
+    margin: 0 2px; /* Further reduce margin between items */
+  }
+
+  .MainMenu li a {
+    padding: 5px 10px; /* Further reduce padding inside anchor tags */
   }
 
   .MainMenu {
-    padding: 5px 10px;
+    padding: 5px 10px; /* Further reduce overall padding */
   }
 }
