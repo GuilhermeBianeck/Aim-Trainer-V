@@ -44,7 +44,7 @@ class App extends React.Component {
     difficulty: Difficulty.DEFAULT_DIFFICULTY,
 
     playSounds: true,
-    playMusic: false,
+    playMusic: true,
 
     lastGameStats: null, // The last game's GameStats class object.
     totalGameStats: new TotalStats(), // The TotalStats class object.
@@ -133,13 +133,6 @@ class App extends React.Component {
     this.loadStatsFromCookie();
     this.loadNicknameFromCookie();
     this.loadOptionsFromCookie();
-
-    // If mobile device, then disable sounds.
-    if (DeviceDetector.isMobileDevice()) {
-      this.setState({ playSounds: false });
-      this.setState({ playMusic: false });
-    }
-
     console.log("Cookies: " + document.cookie);
   };
 
