@@ -6,7 +6,7 @@
   min-width: 0;
   max-width: max(800px, 50vw);
   margin: 0 10px;
-  padding: 20px;
+  padding: 10px; /* Reduced padding */
   text-align: center;
   position: relative;
   background-color: #031812; 
@@ -65,10 +65,12 @@ h1 {
   font-size: max(24px, calc(14px + 1.5vw)); /* Larger font size for better readability */
   font-weight: bold; /* Bold text for better emphasis */
   color: #36ff68; /* Darker color for better contrast */
+  margin: 5px 0; /* Reduced margin for h1 */
 }
 
 h2 {
   font-size: max(18px, calc(12px + 1.0vw)); /* Slightly larger font size */
   font-weight: semi-bold; /* Semi-bold for emphasis */
   color: #555; /* Darker color for better contrast */
+  margin: 5px 0; /* Reduced margin for h2 */
 }
