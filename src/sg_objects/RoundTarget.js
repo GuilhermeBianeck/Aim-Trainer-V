@@ -22,7 +22,7 @@ class RoundTarget {
     this.#yPos = yPos;
     this.#radius = radius;
     this.#scaleFactor = 0.0;
-    this.#maxScaleFactor = 1.0;
+    this.#maxScaleFactor = 2.0;
     this.#markedForDestruct = false;
     this.#isExpanding = true;
     this.#isContracting = false;
