@@ -15,9 +15,9 @@ class AdminPage extends React.Component {
   }
 
   state = {
-    isLoggedIn: false,
-    adminUsername: "",
-    adminPassword: "",
+    isLoggedIn: true,
+    adminUsername: "ADM",
+    adminPassword: "ADM",
   };
 
   render() {
